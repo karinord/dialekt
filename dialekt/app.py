@@ -9,8 +9,8 @@ st.text("Dette er en oversikt over dialektord og betydning.")
 if "df" not in st.session_state:
     st.session_state.df = pd.DataFrame([
        {" ": "et", "Dialektord": "kådn", "Betydning": "korn", "Bøying": "kådn-kåddne-kådn-kåddne", "Bruk": "", "Merknader": "test", "tvil": True, "Endring": "rn -> dn"},
-       {" ": "et", "Dialektord": "kådn", "Betydning": "korn", "Bøying": "kådn-kåddne-kådn-kåddne", "Bruk": "", "Merknader": "test", "tvil": True, "Endring": "rn -> dn"},
-       {" ": "et", "Dialektord": "kådn", "Betydning": "korn", "Bøying": "kådn-kåddne-kådn-kåddne", "Bruk": "", "Merknader": "test", "tvil": True, "Endring": "rn -> dn"},
+       {" ": "ein", "Dialektord": "massjin", "Betydning": "maskin", "Bøying": "massjin-massjin-massjinar-massjinane", "Bruk": "", "Merknader": "test", "tvil": True, "Endring": "sk-> sj"},
+       {" ": "å", "Dialektord": "siddja", "Betydning": "sitte", "Bøying": "siddja-sete-sat-sote", "Bruk": "", "Merknader": "test", "tvil": True, "Endring": "tte -> ddj"},
    ])
 
 st.subheader("Ny registrering")
@@ -36,5 +36,3 @@ with st.form(key="add form", clear_on_submit= True):
 st.subheader("Oversikt over poster")
 
 edited_df = st.data_editor(st.session_state.df, num_rows="dynamic")
-
-
