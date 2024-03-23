@@ -27,10 +27,6 @@ def create_input_field(col_name, col_type):
         elif col_type == "bool":
             return st.checkbox(label=col_name)
 
-# Create a form for user input
-st.title("Registrering av dialektord")
-st.text("Dette er en oversikt over dialektord og betydning.") 
-
 if "df" not in st.session_state:
     st.session_state.df = pd.DataFrame([
        {"Prefiks": "et", "Dialektord": "kådn", "Betydning": "korn", "Bøying": "kådn-kåddne-kådn-kåddne", "Bruk": "", "Merknader": "test", "tvil": True, "Endring": "rn -> dn"},
