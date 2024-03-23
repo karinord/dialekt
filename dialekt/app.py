@@ -34,8 +34,6 @@ if "df" not in st.session_state:
        {"Prefiks": "å", "Dialektord": "siddja", "Betydning": "sitte", "Bøying": "siddja-sete-sat-sote", "Bruk": "", "Merknader": "test", "tvil": True, "Endring": "tte -> ddj"},
    ])
 
-st.subheader("Ny registrering")
-
 # Initialize the index for the new row
 new_row_index = -1
 
